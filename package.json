@@ -1,0 +1,28 @@
+{
+  "name": "testnet-sweeper",
+  "version": "1.0.0",
+  "description": "sweep funds from testnet node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paOol/testnet-sweeper.git"
+  },
+  "keywords": [
+    "testnet",
+    "bitcoin",
+    "cash"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paOol/testnet-sweeper/issues"
+  },
+  "homepage": "https://github.com/paOol/testnet-sweeper#readme",
+  "dependencies": {
+    "bitcoin-cash-rpc": "^0.4.6",
+    "node-schedule": "^1.3.2"
+  }
+}
