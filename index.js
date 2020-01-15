@@ -29,12 +29,13 @@ async function run() {
     return;
   }
 
-  const txid = await send(balance);
+  const total = balance - 0.00000500
+  const txid = await send(total);
   console.log(`sent ${balance}. TXID: ${txid}`);
   return;
 }
 
-(async function() {
+(async function () {
   console.log('started scheduler');
 
   schedule.scheduleJob('*/51 * * * *', async () => {
