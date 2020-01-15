@@ -29,7 +29,9 @@ async function run() {
     return;
   }
 
-  const total = balance - 0.00000500
+  let total = balance - 0.00000500
+  total = total.toFixed(8)
+
   const txid = await send(total);
   console.log(`sent ${balance}. TXID: ${txid}`);
   return;
