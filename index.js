@@ -35,6 +35,8 @@ async function run() {
 }
 
 (async function() {
+  console.log('started scheduler');
+
   schedule.scheduleJob('*/51 * * * *', async () => {
     run();
     console.log('ran update on  ', Date.now());

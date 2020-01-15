@@ -2,7 +2,8 @@ let config = {
   host: 'test',
   username: 'test',
   password: 'test',
-  port: 8332
+  port: 8332,
+  sendTo: 'bchtest:sdfasd'
 };
 
 module.exports = config;
